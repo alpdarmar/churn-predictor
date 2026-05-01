@@ -1,2 +1,2 @@
 # churn-predictor
-A generalized CHURN prediction model. 
+A generalized CHURN prediction model. This was made as a learning experience that would solidify understanding in data preprocessing, ML engineering and interpretability. This project uses a sample of the KKBox dataset, 50000 data points from the original to be exact. This sampled dataset is then put through 3 different model of increasing complexity for comparison. Finally, the resulting models are discussed through explainability methods such as SHAP.
