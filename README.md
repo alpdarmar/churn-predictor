@@ -1,7 +1,7 @@
 # Churn Predictor Model
-
+![Status](https://img.shields.io/badge/status-preprocessing-yellow)
 # Introduction
-A generalized CHURN prediction model. This was made as a learning experience that would solidify understanding in data preprocessing, ML engineering and interpretability. This project uses a sample of the KKBox dataset, 50000 data points from the original to be exact. This sampled dataset is then put through 3 different model of increasing complexity for comparison. Finally, the resulting models are discussed through explainability methods such as SHAP.
+A generalized CHURN prediction model. This was made as a learning experience that would solidify understanding in data preprocessing, ML engineering and interpretability. This project uses a sample of the KKBox dataset, 10000 data points from the original to be exact. This sampled dataset is then put through 3 different model of increasing complexity for comparison. Finally, the resulting models are discussed through explainability methods such as SHAP.
 
 # Definitions
 ## Churn:
@@ -13,7 +13,7 @@ This type of model is very important for companies to decrease their user loss. 
 
 # Methodology
 ## Data
-The dataset that will be used in this project is called KKBox WSDM Churn Prediction. This dataset is of a real asian music streaming service. It consists of the behavioral data of approximately 1 million users and has separate files for user logs, transactions and demographic data. 
+The dataset that will be used in this project is called KKBox WSDM Churn Prediction. This dataset is of a real Taiwanese music streaming service. It consists of the behavioral data of approximately several million users and has separate files for user logs, transactions and demographic data. 
 ## Preprocessing
 First of all the whole dataset will not be used initially in this project. The beginning scale of this project is set to 10 thousand users so the preprocessing process will start by sampling down the dataset to 10 K users. 
 
