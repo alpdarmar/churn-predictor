@@ -1,20 +1,20 @@
 # Churn Predictor Model
 ![Status](https://img.shields.io/badge/status-preprocessing-yellow)
-# Introduction
-A generalized CHURN prediction model. This was made as a learning experience that would solidify understanding in data preprocessing, ML engineering and interpretability. This project uses a sample of the KKBox dataset, 10000 data points from the original to be exact. This sampled dataset is then put through 3 different model of increasing complexity for comparison. Finally, the resulting models are discussed through explainability methods such as SHAP.
+## Introduction
+Predicts whether a KKBox subscriber will churn in the next 30 days, with SHAP-based explanations of why. Built end-to-end as a portfolio project covering data engineering, modeling, explainability, and serving. This project uses a stratified sample (5000 churner + 5000 non-churner) of the KKBox dataset, 10000 data points from the original to be exact. This sampled dataset is then put through 3 different models of increasing complexity (logistic regression -> random forest -> gradient boosting) for comparison. Finally, the resulting models are discussed through explainability methods such as SHAP.
 
-# Definitions
-## Churn:
+## Definitions
+### Churn:
 The concept of a user ceasing use of a product after an X amount of time. For example a user cancelling their subscription to a service after 5 months due to a competitor having better quality for price. 
-## Churn Model: 
-A model that can predict when a user will CHURN from certain predictors relevant to the specific product. For example; a Netflix user's usage time per day, the amount of Netflix originals they watch, the amount of movies they stop watching before the end etc. could be indicators for a churn model.
-## Why create/use a churn model?
+### Churn Model: 
+A model that can predict when a user will churn from certain predictors relevant to the specific product. For example; a Netflix user's usage time per day, the amount of Netflix originals they watch, the amount of movies they stop watching before the end etc. could be indicators for a churn model.
+### Why create/use a churn model?
 This type of model is very important for companies to decrease their user loss. A churn model can be used to predict leavers early on and use certain strategies to keep them in the service. A very popular approach is offering price deals to customers that are predicted to churn very early.
 
-# Methodology
-## Data
-The dataset that will be used in this project is called KKBox WSDM Churn Prediction. This dataset is of a real Taiwanese music streaming service. It consists of the behavioral data of approximately several million users and has separate files for user logs, transactions and demographic data. 
-## Preprocessing
+## Methodology
+### Data
+The dataset that will be used in this project is called KKBox WSDM churn Prediction. This dataset is of a real Taiwanese music streaming service. It consists of the behavioral data of approximately 1 million users and has separate files for user logs, transactions and demographic data. 
+### Preprocessing
 First of all the whole dataset will not be used initially in this project. The beginning scale of this project is set to 10 thousand users so the preprocessing process will start by sampling down the dataset to 10 K users. 
 
 It is also important to note that the data in hand is not very "clean" so to say. 
