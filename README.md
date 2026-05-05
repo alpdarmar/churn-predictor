@@ -1,5 +1,5 @@
 # Churn Predictor Model
-![Status](https://img.shields.io/badge/status-preprocessing-yellow)
+![Status](https://img.shields.io/badge/status-feature_engineering-yellow)
 ## Introduction
 Predicts whether a KKBox subscriber will churn in the next 30 days, with SHAP-based explanations of why. Built end-to-end as a portfolio project covering data engineering, modeling, explainability, and serving. This project uses a stratified sample (5000 churner + 5000 non-churner) of the KKBox dataset, 10000 data points from the original to be exact. This sampled dataset is then put through 3 different models of increasing complexity (logistic regression -> random forest -> gradient boosting) for comparison. Finally, the resulting models are discussed through explainability methods such as SHAP.
 
